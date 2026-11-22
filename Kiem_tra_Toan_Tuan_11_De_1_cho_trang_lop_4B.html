@@ -1,0 +1,143 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Kiểm tra Toán lớp 4B – Tuần 11</title><style>
+:root{--navy:#193e72;--blue:#245db0;--green:#0c8550;--red:#c63843;--ink:#22354f;--bg:#f2f6fd}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px Arial,sans-serif}header{background:linear-gradient(110deg,#17406e,#326fb7);color:white;padding:23px 16px}header .inner,main{max-width:920px;margin:auto}h1{font-size:clamp(22px,4vw,28px);margin:0 0 8px}header p{margin:0;line-height:1.5}main{padding:14px}.panel{background:white;border-radius:15px;padding:18px;margin:13px 0;box-shadow:0 2px 11px #153e6520}.row{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}.name{padding:11px;font:inherit;border:2px solid #b3c5db;border-radius:9px;width:min(100%,300px)}.small{font-size:14px;color:#5e728b;line-height:1.6}.nav{display:flex;gap:7px;flex-wrap:wrap}.nav button{width:44px;min-height:43px;padding:0}.btn{background:var(--blue);color:#fff;border:0;border-radius:9px;font:bold 15px Arial;padding:12px 16px;cursor:pointer}.btn.secondary{background:#dfeafa;color:#234264}.btn:disabled{opacity:.55;cursor:default}.nav button.current{outline:3px solid #8dbbec;outline-offset:1px}.nav button.passed{background:#e1f8ea;color:var(--green);border:2px solid var(--green)}.nav button.failed{background:#fff0f0;color:var(--red);border:2px solid var(--red)}.choices{display:grid;gap:9px;margin:16px 0}.choice{display:flex;gap:11px;align-items:center;border:2px solid #c5d2e4;border-radius:10px;padding:13px 11px;cursor:pointer;line-height:1.35;background:#fff}.choice input{accent-color:var(--blue);width:18px;height:18px;flex:0 0 auto}.choice.ok{border-color:var(--green);background:#e9faef;color:var(--green)}.choice.bad{border-color:var(--red);background:#fff0f1;color:var(--red)}.choice.chosen{border-color:#4185d3;background:#eff6ff}.feedback{font-weight:700;margin-top:12px;line-height:1.55}.good{color:var(--green)}.wrong{color:var(--red)}.math-scroll{overflow-x:auto;max-width:100%;padding:12px 0}.mathrow{display:flex;justify-content:center;gap:18px;flex-wrap:wrap}.calc{display:grid;grid-template-columns:30px repeat(6,41px);grid-template-rows:44px 44px 48px;align-items:center;justify-items:center;border:1px solid #d9e5f2;padding:14px 8px;border-radius:11px}.calc .digit{font:28px Consolas,monospace}.calc .operator{font:bold 29px Consolas}.calc .line{grid-column:1/8;grid-row:3;border-top:3px solid #283d57;align-self:start;width:100%;z-index:0}.calc input{width:36px;height:38px;font:25px Consolas,monospace;text-align:center;border:2px solid #9eb3cd;border-radius:6px;background:white;z-index:1}.calc input.goodinput,.word input.goodinput{color:var(--green);border-color:var(--green);background:#e7f8eb}.calc input.badinput,.word input.badinput{color:var(--red);border-color:var(--red);background:#fff0f1}.calc-label{grid-column:1/8;font-size:13px;color:#5e728b}.word{border:1px solid #d7e3f2;background:#fbfdff;border-radius:12px;padding:14px;margin:15px 0}.word .lineword{margin:13px 0;display:flex;flex-wrap:wrap;align-items:center;gap:8px;line-height:1.5}.word input{padding:11px;width:160px;max-width:100%;border:2px solid #abc0d9;border-radius:9px;font:inherit}.word textarea{width:100%;min-height:82px;padding:11px;border:2px solid #abc0d9;border-radius:9px;font:inherit}.word textarea.goodinput{border-color:var(--green);background:#e9f9ef;color:var(--green)}.word textarea.badinput{border-color:var(--red);background:#fff0f1;color:var(--red)}.word .expr{font-weight:700}.toolbar{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}.score{font-size:19px;font-weight:bold;color:#205aa3}.notice{font-weight:700}.summary{padding:13px;background:#eef5ff;border-radius:10px;line-height:1.6}.hide{display:none!important}@media(max-width:480px){.calc{grid-template-columns:24px repeat(6,34px);padding:9px 4px}.calc input{width:31px;height:36px}.calc .digit{font-size:24px}.panel{padding:14px}}@media print{.btn,.nav{display:none}.panel{break-inside:avoid}}.div-wrap{border:1px solid #d9e5f2;border-radius:11px;padding:13px;max-width:100%;min-width:0}.div-wrap .math-scroll{padding:7px 0}.division{--cell:38px;display:grid;grid-template-columns:repeat(5,var(--cell)) 4px repeat(5,var(--cell));grid-auto-rows:43px;gap:2px;align-items:center;width:max-content;font-family:Consolas,monospace}.staticdigit{font:bold 25px Consolas;display:grid;place-items:center}.divider-vert{border-left:3px solid #283d57;align-self:stretch}.divider-horiz{border-top:3px solid #283d57;align-self:start}.divdigit{width:calc(var(--cell) - 3px);height:36px;border:2px solid #9eb3cd;border-radius:6px;font:23px Consolas;text-align:center;min-width:0}.divdigit.goodinput{border-color:var(--green);background:#e7f8eb;color:var(--green)}.divdigit.badinput{border-color:var(--red);background:#fff0f1;color:var(--red)}.divdigit.nextdigit:not(:focus){outline:3px solid #93c5fd;outline-offset:1px}.div-guide{font-weight:bold;color:#205aa3!important}.mathrow{align-items:flex-start}.calc{flex:none}@media(max-width:480px){.division{--cell:29px;grid-auto-rows:38px;gap:1px}.staticdigit{font-size:20px}.divdigit{height:33px;font-size:19px}.div-wrap{padding:8px}}.word-modes{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.word-modes button.selected{background:var(--blue);color:#fff}.word-lines{display:flex;flex-direction:column;gap:11px;margin-top:12px}.word-lines input{display:block;width:100%;max-width:none;height:46px}.word-lines input:focus{outline:3px solid #8dbbec}.word .teacher-area{border:1px solid #ceddec;background:#f2f7ff;border-radius:10px;padding:13px;margin:12px 0}.word .teacher-area input{width:110px}.word .teacher-area textarea{min-height:70px}.word-photo{max-width:100%;max-height:380px;object-fit:contain;margin:10px auto;display:block}.word-buttons{display:flex;gap:8px;flex-wrap:wrap} .word-buttons .btn{padding:9px 11px}@media(max-width:480px){.word .word-lines input{font-size:15px}} </style></head><body><header><div class="inner"><h1>KIỂM TRA TOÁN LỚP 4B – TUẦN 11</h1><p>Trường Phổ thông Cà Mau – Ninh Bình · Kiến thức đến hết tuần 11 · 17 câu · Thang điểm 10</p></div></header><main><section class="panel"><div class="row"><label><b>Họ và tên học sinh</b><p><input id="name" class="name" placeholder="Nhập họ và tên đầy đủ" autocomplete="name"></p></label><span class="score" id="score">0 / 10 điểm</span></div><p class="small">Câu 1–15: 0,5 điểm/câu · Câu 16: 1 điểm (4 phép tính) · Câu 17: 1,5 điểm. Chấm từng câu theo kết quả lần đầu; câu sai được sửa nhưng không tăng điểm. Dữ liệu lưu trên trình duyệt.</p><div id="nav" class="nav"></div></section><section class="panel"><div class="row"><h2 id="heading">Câu 1</h2><b id="weight"></b></div><div id="body"></div><div class="toolbar"><button id="grade" class="btn">CHẤM ĐIỂM CÂU NÀY</button><button id="prev" class="btn secondary">← CÂU TRƯỚC</button><button id="next" class="btn secondary">CÂU TIẾP →</button></div><div id="feedback" class="feedback" aria-live="polite"></div></section><section class="panel"><div class="row"><h3>Tổng kết</h3><button id="reset" class="btn secondary">LÀM LẠI – LƯỢT MỚI</button></div><div id="summary" class="summary"></div><p class="small" id="history"></p></section></main>
+<script>
+'use strict';
+const MC=[{"title": "Trong số 583 406, chữ số 8 có giá trị là bao nhiêu?", "options": ["8", "80 000", "800", "8 000"], "correct": 1}, {"title": "Số lớn nhất trong các số sau là số nào?", "options": ["407 982", "470 892", "470 298", "407 928"], "correct": 1}, {"title": "Điền dấu thích hợp: 625 304 … 625 340", "options": ["Không so sánh được", "=", "<", ">"], "correct": 2}, {"title": "Cách đọc đầy đủ của số 709 050 là:", "options": ["Bảy trăm linh chín nghìn không trăm năm mươi", "Bảy trăm linh chín nghìn năm trăm", "Bảy trăm chín mươi nghìn không trăm năm mươi", "Bảy trăm linh chín nghìn không trăm năm mươi lăm"], "correct": 0}, {"title": "Làm tròn 478 650 đến hàng nghìn được:", "options": ["480 000", "478 600", "478 000", "479 000"], "correct": 3}, {"title": "Kết quả 36 578 + 27 469 là:", "options": ["64 047", "63 947", "63 047", "64 947"], "correct": 0}, {"title": "Kết quả 426 785 + 158 937 là:", "options": ["584 722", "575 722", "585 712", "585 722"], "correct": 3}, {"title": "Kết quả 607 450 + 85 976 là:", "options": ["693 426", "692 526", "692 426", "693 326"], "correct": 0}, {"title": "Một lớp thu gom 12 450 kg giấy, lớp khác thu gom thêm 2 350 kg. Cả hai lớp thu gom được:", "options": ["15 800 kg", "14 800 kg", "14 700 kg", "10 100 kg"], "correct": 1}, {"title": "Kết quả 90 000 − 27 650 là:", "options": ["62 350", "62 450", "72 350", "63 350"], "correct": 0}, {"title": "Nếu 24 500 − 8 750 + 3 250 thì kết quả là:", "options": ["20 000", "12 500", "18 000", "19 000"], "correct": 3}, {"title": "Tổng ba số 125 450, 238 700 và 96 500 là:", "options": ["460 650", "460 550", "470 650", "450 650"], "correct": 0}, {"title": "Để cộng 378 456 + 249 587, ta bắt đầu cộng từ hàng nào?", "options": ["Hàng đơn vị", "Hàng chục nghìn", "Hàng trăm nghìn", "Hàng nghìn"], "correct": 0}, {"title": "Một kho có 125 460 kg gạo, kho thứ hai nhiều hơn 23 540 kg. Kho thứ hai có:", "options": ["159 000 kg", "149 000 kg", "148 000 kg", "101 920 kg"], "correct": 1}, {"title": "Chọn kết quả đúng của 184 395 + 205 607:", "options": ["399 002", "390 102", "389 002", "390 002"], "correct": 3}], CALCS=[{"a":378456,"b":249587,"op":"+"},{"a":900000,"b":276543,"op":"−"},{"a":2345,"b":6,"op":"×"},{"a":95628,"b":4,"op":":"}], WORD={"text": "Trong đợt quyên góp sách, ngày thứ nhất trường nhận được 12 450 quyển sách. Ngày thứ hai nhận được nhiều hơn ngày thứ nhất 2 350 quyển sách. Ngày thứ ba nhận được ít hơn ngày thứ hai 1 800 quyển sách. Hỏi cả ba ngày trường nhận được bao nhiêu quyển sách?", "answer": [14800, 13000, 40250]};
+const KEY='lop4b_toan_tuan11_de1_web_fixdiem_20261122', $=id=>document.getElementById(id);
+let state=null,idx=0;
+function fresh(name,hist=[],attempt=1){return {name,attempt,history:hist,answers:Array.from({length:17},()=>({graded:false,score:0,value:null}))}}
+function load(){try{return JSON.parse(localStorage.getItem(KEY)||'null')}catch{return null}}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch{}}
+const onlyNum=s=>String(s||'').replace(/[^0-9]/g,'');
+function correctCalc(c){return String(c.op==='+'?c.a+c.b:c.op==='−'?c.a-c.b:c.op==='×'?c.a*c.b:Math.floor(c.a/c.b))}
+function answerString(a){return String(a).replace(/\B(?=(\d{3})+(?!\d))/g,' ')}
+function setName(){const n=$('name').value.trim();if(!n){$('name').focus();return false;}if(!state){const old=load();state=(old&&old.name===n&&Array.isArray(old.answers)&&old.answers.length===17)?old:fresh(n,old?.name===n?old.history:[],old?.name===n?old.attempt:1)}else if(n!==state.name){if(!confirm('Đổi học sinh sẽ mở lượt mới cho tên mới. Tiếp tục?'))return false;state=fresh(n)}save();return true}
+function show(){if(!setName())return;const a=state.answers[idx];$('heading').textContent='Câu '+(idx+1);$('weight').textContent=idx<15?'0,5 điểm':idx===15?'1 điểm':'1,5 điểm';$('grade').disabled=a.graded;$('grade').textContent=a.graded?'ĐÃ CHẤM ĐIỂM LẦN ĐẦU':'CHẤM ĐIỂM CÂU NÀY';$('prev').disabled=idx===0;$('next').disabled=idx===16;
+ if(idx<15)drawMC(a);else if(idx===15)drawCalc(a);else drawWord(a);
+ paint();drawNav();update();}
+function drawMC(a){let q=MC[idx];$('body').innerHTML='<h3></h3><div id="choices" class="choices"></div>';$('body').querySelector('h3').textContent=q.title;let box=$('choices');q.options.forEach((o,j)=>{let label=document.createElement('label');label.className='choice';let input=document.createElement('input');input.type='radio';input.name='ans';input.value=j;input.checked=a.value===j;input.onchange=()=>{a.value=j;save();paint()};label.append(input,document.createTextNode(' '+String.fromCharCode(65+j)+'. '+o));box.append(label)});}
+function rowNum(n,r){let s=String(n),el=document.createDocumentFragment();for(let j=0;j<s.length;j++){let e=document.createElement('span');e.className='digit';e.style.gridColumn=String(8-s.length+j);e.style.gridRow=String(r);e.textContent=s[j];el.append(e)}return el}
+function divFields(){
+ // Theo đúng cách đặt tính tuần 10: mỗi lượt ghi số dư rồi hạ chữ số, kết thúc bằng số dư cuối.
+ const n='95628', d=4, q='23907';let rem=0;const f=[];
+ for(let i=0;i<n.length;i++){
+  const x=rem*10+Number(n[i]);const digit=String(Math.floor(x/d));rem=x%d;
+  f.push({key:'q'+i, digit, col:7+i,row:3,kind:'q'});
+  if(i<n.length-1){f.push({key:'r'+i,digit:String(rem),col:i+1,row:i+2,kind:'r'});
+   f.push({key:'h'+i,digit:n[i+1],col:i+2,row:i+2,kind:'h'});
+  }else f.push({key:'rem',digit:String(rem),col:5,row:6,kind:'r'});
+ }
+ return f;
+}
+const DIV_FIELDS=divFields();
+const DIV_ORDER=['q0','r0','h0','q1','r1','h1','q2','r2','h2','q3','r3','h3','q4','rem'];
+function drawDivision(holder,a){
+ const v=(a.value||[])[3]||{};
+ const wrap=document.createElement('div');wrap.className='div-wrap';
+ const label=document.createElement('b');label.textContent='Phép 4: 95 628 : 4';wrap.append(label);
+ const note=document.createElement('p');note.className='small';note.textContent='Nhập theo thứ tự: chữ số thương → số dư → hạ số. Mỗi ô một chữ số.';wrap.append(note);
+ const scroll=document.createElement('div');scroll.className='math-scroll';const board=document.createElement('div');board.className='division';scroll.append(board);wrap.append(scroll);
+ function add(el,c,r){el.style.gridColumn=c;el.style.gridRow=r;board.append(el)}
+ [...'95628'].forEach((x,i)=>{const el=document.createElement('span');el.textContent=x;el.className='staticdigit';add(el,String(i+1),'1')});
+ const d=document.createElement('span');d.className='staticdigit';d.textContent='4';add(d,'7','1');
+ const line=document.createElement('div');line.className='divider-vert';add(line,'6','1 / 7');
+ const hr=document.createElement('div');hr.className='divider-horiz';add(hr,'7 / 12','2');
+ const inputs={};
+ const guide=document.createElement('p');guide.className='small div-guide';
+ function updateGuide(){const next=DIV_ORDER.find(key=>!inputs[key].value);Object.entries(inputs).forEach(([key,el])=>el.classList.toggle('nextdigit',key===next));guide.textContent=next?'Ô tiếp theo: '+(next.startsWith('q')?'ghi thương':next.startsWith('r')||next==='rem'?'ghi số dư':'hạ số')+'.':'Đã nhập đủ ô, em hãy chấm điểm.'}
+ DIV_FIELDS.forEach(f=>{let e=document.createElement('input');e.className='divdigit';e.inputMode='numeric';e.maxLength=1;e.type='text';e.dataset.answer=f.digit;e.dataset.key=f.key;e.dataset.k=3;e.value=v[f.key]||'';e.setAttribute('aria-label',f.kind==='q'?'Chữ số thương':f.kind==='h'?'Chữ số hạ':'Số dư');add(e,String(f.col),String(f.row));inputs[f.key]=e;
+  e.oninput=()=>{e.value=onlyNum(e.value).slice(-1);if(!a.value)a.value=[[],[],[],{}];if(!a.value[3]||Array.isArray(a.value[3]))a.value[3]={};a.value[3][f.key]=e.value;save();paint();updateGuide();if(e.value){let ix=DIV_ORDER.indexOf(f.key);let nxt=DIV_ORDER.slice(ix+1).find(key=>!inputs[key].value);if(nxt)inputs[nxt].focus()}};
+  e.onkeydown=ev=>{if(ev.key==='Backspace'&&!e.value){let ix=DIV_ORDER.indexOf(f.key);if(ix>0){ev.preventDefault();inputs[DIV_ORDER[ix-1]].focus()}}};
+ });
+ wrap.append(guide);holder.append(wrap);updateGuide();
+}
+function drawCalc(a){$('body').innerHTML='<p>Đặt tính rồi tính: <b>cộng, trừ, nhân, chia</b> (mỗi phép 0,25 điểm). Điền các chữ số từ hàng đơn vị bên phải; phép chia theo thứ tự thương → dư → hạ số.</p><div class="math-scroll"><div id="calcbox" class="mathrow"></div></div>';
+ let holder=$('calcbox');CALCS.slice(0,3).forEach((c,k)=>{let z=document.createElement('div');z.className='calc';let op=document.createElement('span');op.className='operator';op.style.cssText='grid-column:1;grid-row:2';op.textContent=c.op;z.append(rowNum(c.a,1),rowNum(c.b,2),op);let line=document.createElement('div');line.className='line';z.append(line);let ans=correctCalc(c),vals=(a.value||[[],[],[],{}])[k]||[];
+  for(let j=0;j<ans.length;j++){let input=document.createElement('input');input.inputMode='numeric';input.maxLength=1;input.setAttribute('aria-label','Phép '+(k+1)+' chữ số '+(j+1));input.style.gridColumn=String(8-ans.length+j);input.style.gridRow='3';input.dataset.k=k;input.dataset.j=j;input.dataset.answer=ans[j];input.value=vals[j]||'';input.addEventListener('input',()=>{let v=onlyNum(input.value).slice(-1);input.value=v;if(!a.value)a.value=[[],[],[],{}];a.value[k]??=[];a.value[k][j]=v;save();paint();if(v){const inputs=[...z.querySelectorAll('input')];let current=inputs.indexOf(input);if(current>0)inputs[current-1].focus()}});input.addEventListener('keydown',ev=>{if(ev.key==='Backspace'&&!input.value){const inputs=[...z.querySelectorAll('input')];let pos=inputs.indexOf(input);if(pos<inputs.length-1){ev.preventDefault();inputs[pos+1].focus()}}});z.append(input)}let title=document.createElement('div');title.className='calc-label';title.textContent='Phép '+(k+1);title.style.cssText='grid-column:1/8;grid-row:4;padding-top:5px';z.append(title);holder.append(z)});drawDivision(holder,a);
+}
+const WORD_LINES={1:7,2:6};
+function getWord(a){
+ if(!a.value||!a.value.drafts)a.value={mode:1,drafts:{1:Array(7).fill(''),2:Array(6).fill('')},teacherNote:'',photoScore:'',imageData:''};
+ return a.value;
+}
+function wordNorm(s){return String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/\s+/g,' ').trim()}
+function wordMathOK(raw,step,needUnit){
+ let t=wordNorm(raw).replace(/\s+/g,'').replace(/[−–]/g,'-').replace(/[×x]/g,'*').replace(/:/g,'/');
+ const unit=t.match(/\((quyen(sach)?|cuon(sach)?)\)$/);if(Boolean(unit)!==needUnit)return false;
+ if(unit)t=t.slice(0,-unit[0].length);
+ const parts=t.split('=');if(parts.length!==2)return false;
+ const target=WORD.answer[step];if(Number(parts[1])!==target)return false;
+ let expr=parts[0];
+ if(step===0){let m=expr.match(/^(\d+)\+(\d+)$/);return !!m&&[+m[1],+m[2]].sort((a,b)=>a-b).join(',')==='2350,12450'}
+ if(step===1){let m=expr.match(/^(\d+)-(\d+)$/);return !!m&&+m[1]===14800&&+m[2]===1800}
+ const summands=expr.split('+').map(Number);return summands.length===3&&summands.every(x=>Number.isFinite(x))&&summands.sort((a,b)=>a-b).join(',')==='12450,13000,14800';
+}
+function wordSentenceOK(raw,step,explanation){
+ // Câu đầy đủ phải viết hoa đầu câu và có dấu câu phù hợp.
+ const original=String(raw||'').trim().replace(/\s+/g,' ');
+ if(!original||!/^[A-ZÀ-ỸĐ]/u.test(original))return false;
+ if(explanation?!/:$/.test(original):!/\.$/.test(original))return false;
+ const t=wordNorm(original.replace(/[.:]$/,''));
+ // Có đúng thời điểm được hỏi; riêng bước cuối nói về cả ba ngày.
+ const subjects=[
+   /\b(?:ngay thu hai|ngay hai|ngay 2|ngay thu 2)\b/,
+   /\b(?:ngay thu ba|ngay ba|ngay 3|ngay thu 3)\b/,
+   /\b(?:ca ba ngay|ca 3 ngay|ba ngay|3 ngay|tat ca|tong so sach|tong so quyen sach|tong cong)\b/
+ ];
+ if(!subjects[step].test(t))return false;
+ // Nội dung phải nói rõ số sách và việc nhận/quyên góp/thu gom, không chỉ liệt kê ngày + số.
+ const hasBooks=/(?:\bso (?:quyen |cuon )?sach\b|\b(?:quyen|cuon) sach\b|\b(?:quyen|cuon)\b)/.test(t);
+ const hasActivity=/(?:\b(?:nhan duoc|thu duoc|thu gom duoc|quyen gop duoc|dong gop duoc|gop duoc|nhan|thu gom|quyen gop|dong gop)\b)/.test(t);
+ const hasQuantityClause=/(?:\bso (?:quyen |cuon )?sach\b|\b(?:quyen|cuon) sach\b)/.test(t);
+ const hasFullMeaning=hasActivity || (hasQuantityClause&&/\b(?:co|la|tat ca|tong cong)\b/.test(t));
+ if(!hasBooks||!hasFullMeaning)return false;
+ // Tránh nhận nhầm lời giải nói về ngày khác, và phải đúng số lượng nếu ghi câu trả lời.
+ if(step===0&&/\bngay thu ba\b/.test(t))return false;
+ if(step===1&&/\b(?:ca ba ngay|tong cong)\b/.test(t))return false;
+ if(explanation){
+   // Lời giải chỉ nêu đại lượng cần tìm, chưa chèn đáp số.
+   return !/\b\d[\d\s]{2,}\s*(?:quyen|cuon)\b/.test(t) &&
+     (hasQuantityClause || /\b(?:bao nhieu|nhan duoc|thu gom duoc|quyen gop duoc|dong gop duoc)\b/.test(t));
+ }
+ const quantity=new RegExp('(?:^|\\s)'+WORD.answer[step]+'\\s*(?:quyen(?:\\s+sach)?|cuon(?:\\s+sach)?)(?:\\s|$)');
+ return quantity.test(t) && (hasActivity||hasQuantityClause);
+}
+function wordFinalOK(raw){return /^dap so\s*:\s*40\s*250\s*(quyen\s*sach|cuon\s*sach)\.?$/.test(wordNorm(raw))}
+function wordFlags(a){
+ const w=getWord(a);if(w.mode===3)return [];
+ const v=w.drafts[w.mode];
+ // Cách 1: lời giải → phép tính có đơn vị (3 lần) → đáp số.
+ if(w.mode===1)return v.map((x,i)=>i===6?wordFinalOK(x):i%2===0?wordSentenceOK(x,i/2,true):wordMathOK(x,(i-1)/2,true));
+ // Cách 2: phép tính → câu trả lời hoàn chỉnh (3 lần), không ghi đáp số.
+ return v.map((x,i)=>i%2===0?wordMathOK(x,i/2,false):wordSentenceOK(x,(i-1)/2,false));
+}
+function drawWord(a){
+ const w=getWord(a);
+ $('body').innerHTML='<div class="word"><b>Bài toán có lời văn (3 bước)</b><p id="wordtext"></p><div id="wordmodes" class="word-modes"></div><h3 style="text-align:center">Bài giải</h3><div id="wordfields"></div><p class="small">Lời giải phải đủ nghĩa, viết hoa đầu câu và kết thúc bằng dấu hai chấm (:). Câu trả lời phải đủ nghĩa, viết hoa đầu câu, ghi đúng số lượng, đơn vị và kết thúc bằng dấu chấm (.). Cách 1: 3 lời giải, 3 phép tính có đơn vị và 1 dòng đáp số (7 dòng). Cách 2: 3 phép tính và 3 câu trả lời đầy đủ (6 dòng, không có đáp số). Cách 3: giáo viên xem ảnh và xác nhận điểm.</p></div>';
+ $('wordtext').textContent=WORD.text;
+ const labels=['Cách 1 – Ghi lời giải','Cách 2 – Ghi câu trả lời','Cách 3 – Tải ảnh bài giải'];
+ for(let m=1;m<=3;m++){const b=document.createElement('button');b.type='button';b.className='btn secondary'+(m===w.mode?' selected':'');b.textContent=labels[m-1];b.disabled=a.graded&&m!==w.mode;b.onclick=()=>{w.mode=m;save();drawWord(a);paint()};$('wordmodes').append(b)}
+ const f=$('wordfields');
+ if(w.mode===3){
+   const hint=document.createElement('p');hint.className='small';hint.textContent='Chụp rõ bài giải có đủ phép tính, lời giải và đáp số. Ảnh cần giáo viên xem trực tiếp; máy không tự đọc chữ viết tay.';
+   const upload=document.createElement('input');upload.type='file';upload.accept='image/png,image/jpeg,image/webp';upload.disabled=a.graded;
+   const image=document.createElement('img');image.className='word-photo';image.hidden=!w.imageData;if(w.imageData)image.src=w.imageData;
+   const t=document.createElement('div');t.className='teacher-area';t.innerHTML='<b>Giáo viên xác nhận điểm</b><p class="small">Nhập điểm từ 0 đến 1,5 theo bước 0,25 và nhận xét bài viết.</p>';
+   const pts=document.createElement('input');pts.type='number';pts.min=0;pts.max=1.5;pts.step=.25;pts.placeholder='Điểm';pts.value=w.photoScore||'';pts.disabled=a.graded;pts.oninput=()=>{w.photoScore=pts.value;save()};
+   const note=document.createElement('textarea');note.placeholder='Nhận xét của giáo viên';note.value=w.teacherNote||'';note.disabled=a.graded;note.oninput=()=>{w.teacherNote=note.value;save()};
+   upload.onchange=()=>{const file=upload.files?.[0];if(!file)return;if(file.size>5*1024*1024||!/^image\/(png|jpeg|webp)$/.test(file.type)){alert('Vui lòng chọn ảnh JPG/PNG/WebP dưới 5 MB.');return;}const reader=new FileReader();reader.onload=()=>{w.imageData=String(reader.result);image.src=w.imageData;image.hidden=false;save()};reader.readAsDataURL(file)};
+   t.append(pts,note);f.append(hint,upload,image,t);
+   return;
+ }
+ const area=document.createElement('div');area.className='word-lines';
+ const drafts=w.drafts[w.mode];drafts.forEach((v,i)=>{const input=document.createElement('input');input.type='text';input.className='word-input';input.dataset.line=i;input.autocomplete='off';input.setAttribute('aria-label','Dòng bài giải '+(i+1));input.placeholder=w.mode===1?(i===6?'Đáp số: ...':i%2===0?'Viết lời giải có nghĩa, kết thúc bằng dấu :':'Viết phép tính và đơn vị trong ngoặc'):i%2===0?'Viết phép tính':'Viết câu trả lời đầy đủ, có đơn vị và dấu chấm';input.value=v;input.oninput=()=>{drafts[i]=input.value;save();paint()};area.append(input)});f.append(area);
+}
+function matches(){let a=state.answers[idx];if(idx<15)return [a.value===MC[idx].correct];if(idx===15)return CALCS.map((c,k)=>{if(k===3){const v=(a.value||[])[3]||{};return DIV_FIELDS.every(f=>v[f.key]===f.digit)}const e=correctCalc(c),v=(a.value||[])[k]||[];return v.join('')===e});return wordFlags(a);}
+function paint(){let a=state.answers[idx];$('feedback').textContent='';$('feedback').className='feedback';if(!a.graded)return;let flags=matches(),full=idx===16&&getWord(a).mode===3?true:flags.every(Boolean);$('feedback').classList.add(full?'good':'wrong');$('feedback').textContent=(idx===16&&getWord(a).mode===3?'Giáo viên đã xác nhận. '+(getWord(a).teacherNote||''):full?'✓ Các phần đều đúng.':'Có phần chưa đúng; em hãy sửa các ô hoặc đáp án màu đỏ.')+' Điểm lần đầu: '+a.score.toFixed(2).replace('.',',')+' điểm (không thay đổi).';if(idx<15){document.querySelectorAll('.choice').forEach((el,j)=>{el.classList.toggle('ok',j===MC[idx].correct);el.classList.toggle('bad',j===a.value&&j!==MC[idx].correct)})}else if(idx===15){document.querySelectorAll('.calc input,.divdigit').forEach(e=>{const value=+e.dataset.k===3?((a.value||[])[3]||{})[e.dataset.key]:((a.value||[])[+e.dataset.k]||[])[+e.dataset.j];e.classList.toggle('goodinput',value===e.dataset.answer);e.classList.toggle('badinput',value!==e.dataset.answer)})}else{document.querySelectorAll('.word-input').forEach((e,j)=>{e.classList.toggle('goodinput',flags[j]);e.classList.toggle('badinput',!flags[j])})}}
+function valid(){const a=state.answers[idx];if(idx<15)return a.value!==null;if(idx===15)return CALCS.every((c,k)=>k===3?DIV_FIELDS.every(f=>String(((a.value||[])[3]||{})[f.key]||'').length===1):((a.value||[])[k]||[]).join('').length===correctCalc(c).length);const w=getWord(a);if(w.mode===3)return !!(w.imageData&&w.teacherNote.trim()&&w.photoScore!==''&&Number(w.photoScore)>=0&&Number(w.photoScore)<=1.5&&Number(w.photoScore)*4===Math.round(Number(w.photoScore)*4));return w.drafts[w.mode].every(t=>String(t||'').trim()!=='')}
+function grade(){if(!setName()||state.answers[idx].graded)return;if(!valid()){$('feedback').className='feedback wrong';$('feedback').textContent='Em cần hoàn thành đủ các dòng bài giải; nếu tải ảnh, giáo viên cần nhập điểm và nhận xét trước khi chấm.';return}let a=state.answers[idx],flags=matches();a.graded=true;if(idx===16){const w=getWord(a);a.score=w.mode===3?Number(w.photoScore):Math.round(flags.filter(Boolean).length/flags.length*1.5*100)/100}else a.score=idx<15?(flags[0]?.5:0):Math.round(flags.filter(Boolean).length/flags.length*1*100)/100;save();show()}
+function drawNav(){let n=$('nav');n.replaceChildren();state.answers.forEach((a,i)=>{let b=document.createElement('button');b.textContent=i+1;b.className='btn secondary'+(i===idx?' current':'')+(a.graded?(a.score===(i<15?.5:i===15?1:1.5)?' passed':' failed'):'');b.onclick=()=>{idx=i;show()};n.append(b)})}
+function update(){const count=state.answers.filter(a=>a.graded).length,score=state.answers.reduce((s,a)=>s+a.score,0);$('score').textContent=score.toFixed(2).replace('.',',')+' / 10 điểm';$('summary').textContent='Lượt '+state.attempt+': đã chấm '+count+'/17 câu · Điểm lần đầu '+score.toFixed(2).replace('.',',')+'/10.';$('history').textContent=state.history.length?'Lịch sử: '+state.history.map(h=>'Lượt '+h.attempt+': '+h.score.toFixed(2).replace('.',',')+' điểm ('+h.done+'/17 câu)').join(' · '):'Chưa có lượt trước.'}
+function next(d){idx=Math.max(0,Math.min(16,idx+d));show()}
+$('grade').onclick=grade;$('next').onclick=()=>next(1);$('prev').onclick=()=>next(-1);$('name').addEventListener('change',()=>{state=null;idx=0;show()});$('reset').onclick=()=>{if(!setName())return;if(!confirm('Kết thúc lượt hiện tại và làm lại từ đầu?'))return;const score=state.answers.reduce((s,a)=>s+a.score,0),done=state.answers.filter(a=>a.graded).length;let hist=state.history.concat({attempt:state.attempt,score,done});state=fresh(state.name,hist,state.attempt+1);idx=0;save();show()};const prev=load();if(prev?.name){$('name').value=prev.name;state=prev}show();
+</script></body></html>
